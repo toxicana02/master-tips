@@ -1,0 +1,55 @@
+/* MASTER TIPS - index.css - Inadhibiti mwili mzima wa website */
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #001a00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #001a00 0%, #006400 40%, #00aa00 70%, #ffcc00 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Picha zote za football ziwe nzuri */
+img {
+  max-width: 100%;
+}
+
+/* Kwenye simu ndogo */
+@media (max-width: 500px) {
+  body {
+    background: linear-gradient(180deg, #001a00 0%, #006400 50%, #00aa00 100%);
+  }
+}

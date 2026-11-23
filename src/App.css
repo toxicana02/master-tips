@@ -1,0 +1,304 @@
+/* MASTER TIPS - FOOTBALL DESIGN */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #001a00;
+}
+
+/* BACKGROUND YA UKUTA WA MALIPO */
+.master-bg {
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  background: linear-gradient(180deg, #001a00 0%, #006400 40%, #00aa00 70%, #ffcc00 100%);
+  background-attachment: fixed;
+}
+
+/* BANNER YA JUU - FOOTBALL */
+.banner-wrap {
+  position: relative;
+}
+.banner-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,30,0,0.9));
+}
+.banner-text {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+.logo-box {
+  background: white;
+  display: inline-block;
+  padding: 8px 25px;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.logo-green {
+  font-size: 28px;
+  font-weight: 900;
+  color: #00aa00;
+}
+.logo-orange {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ff9900;
+}
+
+.main-title {
+  font-size: 48px;
+  margin: 12px 0 5px;
+  font-weight: 900;
+  text-shadow: 0 4px 15px black;
+  line-height: 1.05;
+}
+.title-yellow { color: #ffcc00; }
+.title-white { color: white; }
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccffcc;
+}
+
+/* KADI YA MALIPO */
+.pay-card {
+  background: white;
+  color: black;
+  max-width: 400px;
+  margin: 25px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+.pay-card-img-wrap {
+  position: relative;
+}
+.pay-card-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+.badge-live {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #00aa00;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.badge-win {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffcc00;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 900;
+  font-size: 14px;
+}
+.pay-card-body {
+  padding: 22px;
+}
+.pay-title {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 900;
+}
+.pay-desc {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+.tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.tag-green { background: #e8ffe8; color: #00aa00; }
+.tag-yellow { background: #fff0cc; color: #cc7700; }
+.tag-blue { background: #e8f0ff; color: #0066ff; }
+
+.price {
+  font-size: 38px;
+  font-weight: 900;
+  color: #00aa00;
+  margin: 10px 0 2px;
+}
+.price-old {
+  font-size: 16px;
+  color: #888;
+  text-decoration: line-through;
+}
+.offer-end {
+  font-size: 13px;
+  color: #ff0000;
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+.label {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.phone-input {
+  width: 92%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  text-align: center;
+}
+.phone-input:focus {
+  border-color: #00aa00;
+  outline: none;
+}
+.pay-btn {
+  background: linear-gradient(90deg, #00cc00, #008800);
+  color: white;
+  border: none;
+  padding: 17px 30px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,204,0,0.3);
+}
+.pay-btn:active {
+  transform: scale(0.98);
+}
+.pay-note {
+  font-size: 13px;
+  color: #888;
+  margin-top: 12px;
+}
+
+/* PICHA NDOGO ZA FOOTBALL */
+.mini-photos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.mini-photos img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid white;
+}
+
+/* STATS CHINI */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 20px auto 0;
+}
+.stat {
+  background: rgba(255,255,255,0.2);
+  padding: 12px 18px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.footer {
+  color: rgba(255,255,255,0.8);
+  margin-top: 25px;
+}
+
+/* BAADA YA KULIPA */
+.paid-bg {
+  background: linear-gradient(180deg, #003300, #006400);
+  min-height: 100vh;
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+  font-family: Arial;
+}
+.paid-banner {
+  width: 100%;
+  max-width: 500px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid #ffcc00;
+}
+.mkeka-box {
+  background: white;
+  color: black;
+  max-width: 700px;
+  margin: 15px auto;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.mkeka-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.mkeka-card {
+  background: #f8f8f8;
+  width: 250px;
+  padding: 18px;
+  border-radius: 15px;
+}
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.back-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* KWA SIMU NDOGO */
+@media (max-width: 500px) {
+  .main-title { font-size: 36px; }
+  .banner-img { height: 220px; }
+  .pay-card { margin: 20px 12px; }
+}
